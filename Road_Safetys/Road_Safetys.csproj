@@ -8,12 +8,20 @@
 
   <ItemGroup>
     <Content Remove="Views\Login.cshtml" />
-    <Content Remove="Views\Shared\_Layout.cshtml" />
+    <Content Remove="wwwroot\css\Navbar\" />
+    <Content Remove="wwwroot\js\Navbar\" />
   </ItemGroup>
   <ItemGroup>
     <None Remove="Views\Rs_MST_AccidentData\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Views\Rs_MST_AccidentData\" />
+    <Folder Include="wwwroot\css\Navbar\" />
+    <Folder Include="wwwroot\js\Navbar\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Update="Views\Home\Index.cshtml">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
 </Project>

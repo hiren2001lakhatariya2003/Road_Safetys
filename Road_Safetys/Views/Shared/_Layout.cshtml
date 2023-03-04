@@ -1,8 +1,43 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - Coding_mevricks</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <link rel="stylesheet" href="~/Coding_mevricks.styles.css" asp-append-version="true" />
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="~/css/style.css">
+
 </head>
 <body>
-    hiiiii
+    <!--Start Navbar-->
+    	
+    <!-- END nav -->
+
+	</section>
+    <!--End Navbar-->
+    <div class="container">
+      
+            @RenderBody()
+        
+    </div>
+	<!--footer start-->
+
+	<!--footer end-->
+
+	<!--nav js start-->
+  <script src="~/js/Navbar/jquery.min.js"></script>
+  <script src="~/js/Navbar/popper.js"></script>
+  <script src="~/js/Navbar/bootstrap.min.js"></script>
+  <script src="~/js/Navbar/main.js"></script>
+	<!--nav js end-->
+
+    @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>
+
